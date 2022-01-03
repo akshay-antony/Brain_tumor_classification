@@ -31,9 +31,9 @@ if __name__ == '__main__':
 			input_data = batch_data['input']
 			labels = batch_data['labels']
 			labels = torch.squeeze(labels, axis=1)
-
+			print(labels)
 			predictions = model(input_data)
-			
+			print(predictions)
 			optimizer.zero_grad()
 
 			loss = loss_func(predictions, labels)

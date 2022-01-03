@@ -36,12 +36,3 @@ class MyDataset(Dataset):
 
 if __name__ == '__main__':
 	pass
-	# filename = "/home/akshay/ml_project/features_labelled.csv"
-	# dataset = MyDataset(filename)
-
-	# dataloader = DataLoader(dataset, batch_size=2, shuffle=True, num_workers=8)
-
-	# for batch in dataloader:
-	# 	x = batch['input']
-	# 	y = batch['labels']
-	# 	print(x.shape, y.shape)
